@@ -1,19 +1,19 @@
 import './App.scss'
-
-import Header from "./components/Header/Header"
-import Home from './components/Home/Home'
-import Features from './components/Features/Features'
-import Footer from './components/Footer/Footer'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import MainPage from './pages/MainPage/MainPage'
+import Mapas from './pages/Mapas/Mapas'
 
 function App() {
   
 
   return (
     <div className="App">
-      <Header/>
-      <Home/>
-      <Features/>
-      <Footer/>
+      <Router>
+        <Routes>
+          <Route path='/' element={<MainPage />} />
+          <Route path='/mapas' element={<Mapas />} />
+        </Routes>
+      </Router>
     </div>
   )
 }
