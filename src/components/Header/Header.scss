@@ -16,6 +16,10 @@ header {
     display: flex;
     align-items: center;
 
+    @media (max-width: 900px) {
+      margin: auto;
+    }
+
     &:hover {
       cursor: pointer;
       svg {
@@ -29,8 +33,5 @@ header {
       transition: .3s ease;
     }
 
-    @media (max-width: 900px) {
-      justify-content: center;  
-    }
   }
 }
