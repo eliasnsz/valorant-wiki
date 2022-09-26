@@ -1,0 +1,68 @@
+#home {
+  background-image: linear-gradient(to right, #8f2829e3, #5f1719ea 80%), url("https://img.freepik.com/vetores-premium/conceito-de-fundo-branco-textura-elegante_23-2148447314.jpg?w=2000");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 101vh;
+  width: 100%;
+  position: relative;
+  padding-top: 64px;
+
+  .flex-container {
+    display: flex;
+    height: 80%;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 900px) {
+      & {
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        text-align: center;
+      }
+
+      #logo-animate {
+        width: 50vw;
+        max-width: 600px;
+        animation: none;
+      }
+    }
+  }
+
+  #logo-animate {
+    width: 45vw;
+    max-width: 600px;
+    animation: logo-animate 2s ease-in-out infinite alternate-reverse both;
+  }
+
+  button {
+    all: unset;
+    margin-top: 30px;
+    padding: 10px 40px;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s ease;
+    font-weight: 600;
+
+    &:hover {
+      background-color: #fff;
+      color: #000;
+    } 
+  }
+
+
+  svg {
+    position: absolute;
+    bottom: -1px;
+  }
+}
+
+@keyframes logo-animate {
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(20px);
+  }
+}

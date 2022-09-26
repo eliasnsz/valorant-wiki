@@ -1,0 +1,36 @@
+header {
+  background-color: #121212;
+  padding: 20px 0px;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  transition: .3s ease;
+
+  &.unfocused {
+    background-color: #1212125e;
+  }
+
+  .logo-container {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      cursor: pointer;
+      svg {
+        fill: rgba(255, 255, 255, 0.779);
+      }
+    }
+
+    svg {
+      width: 180px;
+      fill: #fff;
+      transition: .3s ease;
+    }
+
+    @media (max-width: 900px) {
+      justify-content: center;  
+    }
+  }
+}
