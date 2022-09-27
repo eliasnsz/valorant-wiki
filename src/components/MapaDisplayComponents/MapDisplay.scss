@@ -3,12 +3,12 @@
   background-size: cover;
   background-attachment: fixed;
   
-  .image-map {
-    width: fit-content;
+  img {
+    width: 50%;
     margin: auto;
-
-    display: flex;
-    height: 69vh;
-    justify-content: center;
+    
+    @media (max-width: 1200px) {
+      width: 90%;      
+    }
   }
 }

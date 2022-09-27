@@ -3,10 +3,8 @@ import './MapDisplay.scss'
 export default function MapDisplay({ bgImage, mapImage }) {
   return (
     <>
-      <div id="map-display" style={{ backgroundImage: `url(${bgImage})` }}>
-        <div className="image-map">
-          {mapImage && <img src={mapImage} alt="" />}
-        </div>
+      <div id="map-display" className='main-flex' style={{ backgroundImage: `url(${bgImage})` }}>
+        {mapImage && <img src={mapImage} alt="" />}
       </div>
     </>
   )
