@@ -16,13 +16,12 @@
     img {
       background-color: #00000077;
       border-radius: 50%;
-      min-height: 70px;
       padding: 30px;
       height: 100%;
       animation: rotate 150s linear infinite;
 
       @media (max-width: 700px) {
-        min-height: 350px;
+        height: 350px;
       }
     }
   }
