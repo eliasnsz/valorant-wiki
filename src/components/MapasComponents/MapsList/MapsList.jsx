@@ -15,7 +15,10 @@ export default function MapsList() {
           <div className="grid-container">
             {!isFetching && data !== null && data["data"].map((map, i) => {
               return (
-                <Link key={i} to={`/mapas/${ map.uuid }`}>
+                <Link data-aos="zoom-in" 
+                data-aos-duration="500" 
+                data-aos-delay={100 + i*100} d
+                ata-aos-easing="ease-out" key={i} to={`/mapas/${ map.uuid }`}>
                   <MapCard 
                   mapName={ map.displayName }
                   coords={ map.coordinates }
