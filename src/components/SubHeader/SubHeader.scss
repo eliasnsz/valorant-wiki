@@ -3,9 +3,43 @@
   justify-content: center;
   padding: 100px 0px 32px 0px;
 
+  #back-button {
+    all: unset;
+    position: absolute;
+    left: 5%;
+    padding: 8px;
+    cursor: pointer;
+    transition: .3s ease;
+
+    &, img {
+      width: 30px;
+      height: 30px;
+    }
+
+  }
+
   .title-container {
     color: #313131;
     text-align: center;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center ;
+
+    @media (max-width: 700px) {
+      flex-direction: column;
+
+      #back-button {
+        position: absolute;
+        left: 0;
+        margin-bottom: 10px;
+      
+        &, img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
 
     p {
       color: #212121;

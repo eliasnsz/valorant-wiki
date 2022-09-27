@@ -1,0 +1,35 @@
+#map-display {
+  height: 100%;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+
+  .image-map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    height: 636px;
+    overflow: hidden;
+
+    img {
+      background-color: #00000077;
+      border-radius: 50%;
+      min-height: 70px;
+      padding: 30px;
+      height: 100%;
+      animation: rotate 150s linear infinite;
+
+      @media (max-width: 700px) {
+        min-height: 350px;
+      }
+    }
+  }
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
