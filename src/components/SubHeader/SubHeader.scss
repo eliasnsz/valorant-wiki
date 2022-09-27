@@ -1,0 +1,30 @@
+#sub-header {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0px 32px 0px;
+
+  .title-container {
+    color: #313131;
+    text-align: center;
+
+    p {
+      color: #212121;
+      font-weight: 400;
+      margin-top: 15px;
+    }
+    hr {
+      border: none;
+      height: 4px;
+      width: 15%;
+      background-color: #313131;
+      margin: auto;
+    }
+
+  }
+
+  svg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
