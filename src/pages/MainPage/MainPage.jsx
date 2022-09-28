@@ -1,15 +1,16 @@
-import Header from "../../components/Header/Header";
+import { useEffect } from "react";
+
 import Home from "../../components/MainPageComponents/Home/Home";
 import Features from "../../components/MainPageComponents/Features/Features";
-import Footer from "../../components/Footer/Footer";
 
 export default function MainPage() {
+
+  useEffect(() => window.scrollTo(0, 0))
+
   return (
     <>
-      <Header/>
       <Home/>
       <Features/>
-      <Footer/>
     </>
   )
 }

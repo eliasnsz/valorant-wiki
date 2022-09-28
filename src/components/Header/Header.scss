@@ -1,14 +1,16 @@
 header {
   background-color: #121212;
   padding: 20px 0px;
-  position: fixed;
+  position: sticky  ;
   z-index: 1000;
+  min-height: 67px;
   top: 0;
   width: 100%;
   transition: .3s ease;
 
   &.unfocused {
-    background-color: #1212125e;
+    background-color: #12121286;
+    backdrop-filter: blur(5px);
   }
 
   .logo-container {
@@ -34,4 +36,48 @@ header {
     }
 
   }
+
+  .limiter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    ul {
+      display: flex;
+      list-style: none;
+      color: #fff;
+      gap: 30px;
+      font-weight: 500;
+
+      @media (max-width: 900px) {
+        display: none;
+      }
+
+      .link {
+        all: unset;
+      }
+
+      li {
+        cursor: pointer;
+        padding: 0px 10px;
+        font-size: 0.95em;
+
+        &::after {
+          display: block;
+          content: '';
+          width: 0%;
+          height: 2px;
+          background-color: #fff;
+          transition: .5s cubic-bezier(0.23, 1, 0.320, 1);
+        }
+
+        &:hover::after {
+          width: 100%;
+        }
+      }
+    }
+    
+  }
+
 }

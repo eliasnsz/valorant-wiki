@@ -5,15 +5,15 @@ import { Link } from 'react-router-dom'
 
 export default function MapsList() {
 
-  const { data, isFetching } = useFetch("https://valorant-api.com/v1/maps/")
+  const { data: mapList, isFetching } = useFetch("https://valorant-api.com/v1/maps/")
   
 
   return (
     <>
-      <div id="maps-list">
+      <div id="maps-list" className='main-container'>
         <div className="limiter">
           <div className="grid-container">
-            {!isFetching && data !== null && data["data"].map((map, i) => {
+            {!isFetching && mapList !== null && mapList.map((map, i) => {
               return (
                 <Link data-aos="zoom-in" 
                 data-aos-duration="500" 
@@ -23,6 +23,7 @@ export default function MapsList() {
                   mapName={ map.displayName }
                   coords={ map.coordinates }
                   background={ `${map.splash}` }
+                  mapImage={`${map.displayIcon}`}
                   />
                 </Link>
               )

@@ -4,8 +4,9 @@
   background-position: center center;
   background-attachment: fixed;
   display: flex;
-  width: 100%;
   position: relative;
+  width: 100%;
+  top: 0;
   z-index: 500;
 
   .flex-container {
@@ -16,9 +17,10 @@
 
     @media (max-width: 900px) {
       & {
+        padding: 120px 0px;
         flex-direction: column-reverse;
-        justify-content: space-evenly;
         text-align: center;
+        gap: 50px;
       }
 
       #logo-animate {

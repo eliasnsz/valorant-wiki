@@ -25,7 +25,7 @@
 
   .img-container {
     display: flex;
-    height: 50%;
+    height: 60%;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -36,8 +36,11 @@
   } 
   .text-container {
     color: #313131;
-    height: 50%;
+    height: 40%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 
     h3 {
       font-size: 1.3em;
@@ -46,7 +49,7 @@
 
     p {
       font-weight: 300;
-      font-size: 0.95em;
+      font-size: 0.9em;
     }
   } 
 }

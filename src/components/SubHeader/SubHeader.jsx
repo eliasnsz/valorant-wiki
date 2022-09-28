@@ -8,12 +8,6 @@ export default function SubHeader({ title, desc }) {
         <div className="limiter">
 
           <div data-aos="fade-left" className="title-container">
-            <Link to=".." relative='path'>
-              <button id='back-button'>
-                <img src="https://www.svgrepo.com/show/78884/back-arrow.svg" alt="" />
-              </button>
-            </Link>
-
             <div>
               <h1>{title}</h1>
               <hr />

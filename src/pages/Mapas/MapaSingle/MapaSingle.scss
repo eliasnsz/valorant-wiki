@@ -1,0 +1,60 @@
+#mapa-single {
+  display: flex;
+  height: 100%;
+
+  .bg-container {
+    width: 60%;
+    height: calc(100vh - 148px);
+    background-position: center center; 
+
+    @media (max-width: 900px) {
+      position: relative;
+      width: 100%;
+    }
+  }
+
+  .card-container {
+    display: grid;
+    place-items: center;
+    width: 40%;
+    height: calc(100vh - 148px);  
+
+    @media (max-width: 900px) {
+      position: absolute;
+      width: 100%;
+    }
+
+    .card {
+      width: 60%;
+      height: 70%;
+      background-color: #fff;
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.404);
+      border-radius: 20px;
+      overflow: hidden;
+
+      @media (max-width: 1400px) {
+        width: 80%;    
+      }
+
+
+      .img-container {
+        background-position: center center;
+        background-size: 100%;
+        background-size: cover;
+        height: 30%;    
+      }
+      .text-container {
+        text-align: center;
+        padding: 20px 0px;
+      }
+      .map-image-container {
+        background-position: center center;
+        margin: auto;
+        height: 50%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+    }
+  }
+}

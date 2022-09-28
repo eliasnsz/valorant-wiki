@@ -8,7 +8,7 @@ export default function useFetch(url) {
 
   useEffect(() => {
     axios.get(url)
-      .then(res => setData(res.data))
+      .then(res => setData(res.data["data"]))
       .finally(setIsFetching(false))
   }, [])
 
