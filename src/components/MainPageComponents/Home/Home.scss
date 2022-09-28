@@ -13,11 +13,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 250px 0px;
+    padding: 290px 0px;
 
     @media (max-width: 900px) {
       & {
-        padding: 120px 0px;
+        padding: 190px 0px;
         flex-direction: column-reverse;
         text-align: center;
         gap: 50px;
