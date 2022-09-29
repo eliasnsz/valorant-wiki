@@ -11,13 +11,15 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <div>
+        <div className='main-container'>
           <Header/>
-            <Routes>
-              <Route path='/' element={<MainPage />} />
-              <Route path='/mapas' element={<Mapas />} />
-              <Route path='/mapas/:uuid' element={<MapaSingle />} />
-            </Routes>
+            <div className="body-container">
+              <Routes>
+                <Route path='/' element={<MainPage />} />
+                <Route path='/mapas' element={<Mapas />} />
+                <Route path='/mapas/:uuid' element={<MapaSingle />} />
+              </Routes>
+            </div>
           <Footer/>
         </div>
       </Router>

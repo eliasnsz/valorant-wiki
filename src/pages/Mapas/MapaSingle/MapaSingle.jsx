@@ -19,20 +19,25 @@ export default function MapaSingle () {
   return (
     <>
       { !isFetching && filteredMap !== null && 
-      <div id="mapa-single" className='main-container'>
-        <div data-aos="fade-right" className="bg-container" style={{ backgroundImage: `url(${filteredMap.splash})` }} ></div>
+      <div id="mapa-single" >
+        <div className="bg-container" style={{ backgroundImage: `url(${filteredMap.splash})` }} ></div>
           
-          <div className="card-container">
+          <div className="card-container" style={{ backgroundImage: `url(${filteredMap.splash})`}} >
             <div data-aos="fade-left" className="card">
 
-              <div className="img-container" style={{ backgroundImage: `url(${filteredMap.splash})` }} ></div>
+              <div className="img-container" style={{ backgroundImage: `url(${filteredMap.splash})`}} ></div>
 
               <div className="text-container">
+              <hr/>
+
                 <h2>{filteredMap.displayName}</h2>
                 <p>{filteredMap.coordinates}</p>
+                <hr/>
               </div>
 
-              <div className="map-image-container"  style={{ backgroundImage: `url(${filteredMap.displayIcon})`}} ></div>
+              <div className="map-image-container">
+                <img src={filteredMap.displayIcon} alt="" />
+              </div>
               
           </div>
         
